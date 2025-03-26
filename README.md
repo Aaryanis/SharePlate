@@ -65,19 +65,19 @@
     <h2>📸 Screenshots</h2>
     <div class="screenshots">
       <div class="screenshot">
-        <img src="public/img/screenshots/home.png" alt="Home Page">
+        <img src="https://pbs.twimg.com/media/Gm_oPbQa4AApYnR?format=jpg&name=900x900" alt="Home Page">
         <p>Home Page</p>
       </div>
       <div class="screenshot">
-        <img src="public/img/screenshots/food-map.png" alt="Food Map">
+        <img src="https://pbs.twimg.com/media/Gm_op1ia8AAP-zG?format=jpg&name=900x900" alt="Food Map">
         <p>Food Map</p>
       </div>
       <div class="screenshot">
-        <img src="public/img/screenshots/donation-form.png" alt="Donation Form">
+        <img src="https://pbs.twimg.com/media/Gm_o2HSa0AAcI1l?format=jpg&name=900x900" alt="Donation Form">
         <p>Donation Form</p>
       </div>
       <div class="screenshot">
-        <img src="public/img/screenshots/dashboard.png" alt="User Dashboard">
+        <img src="https://pbs.twimg.com/media/Gm_qhMzaEAA9Emv?format=jpg&name=900x900" alt="User Dashboard">
         <p>User Dashboard</p>
       </div>
     </div>
