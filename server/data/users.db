@@ -1,0 +1,2 @@
+{"$$indexCreated":{"fieldName":"email","unique":true,"sparse":false}}
+{"name":"Aaryan Choudhary","email":"timbulb03@gmail.com","password":"$2a$10$YtKZPPUHYsCpSkIdkQ..2uwhfSDAashlxcdDFuRV5R1T8BxnSbfOa","userType":"donor","phone":"9929586989","address":"Ratanada , Jodhpur , RJ","organization":"","isAnonymous":true,"credits":0,"rating":0,"totalDonations":0,"location":{"coordinates":[78.9629,20.5937],"address":"Default location: India"},"createdAt":{"$$date":1742988683725},"_id":"cmB7ZOn8zER9h5hm"}

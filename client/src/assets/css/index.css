@@ -1,0 +1,148 @@
+:root {
+  --primary-color: #28a745;
+  --primary-dark: #218838;
+  --secondary-color: #ffc107;
+  --secondary-dark: #e0a800;
+  --dark-color: #343a40;
+  --light-color: #f8f9fa;
+  --danger-color: #dc3545;
+  --success-color: #28a745;
+  --max-width: 1300px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.app-content {
+  min-height: calc(100vh - 160px);
+}
+
+/* Animation classes for Anime.js */
+.animated-element {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.animated-fadeIn {
+  opacity: 0;
+}
+
+.animated-slideUp {
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+.animated-slideLeft {
+  transform: translateX(-50px);
+  opacity: 0;
+}
+
+.animated-slideRight {
+  transform: translateX(50px);
+  opacity: 0;
+}
+
+.animation-stagger {
+  opacity: 0;
+}
+
+/* Custom utility classes */
+.text-primary-sp {
+  color: var(--primary-color) !important;
+}
+
+.text-secondary-sp {
+  color: var(--secondary-color) !important;
+}
+
+.bg-primary-sp {
+  background-color: var(--primary-color) !important;
+}
+
+.bg-secondary-sp {
+  background-color: var(--secondary-color) !important;
+}
+
+.btn-primary-sp {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.btn-primary-sp:hover {
+  background-color: var(--primary-dark) !important;
+  border-color: var(--primary-dark) !important;
+}
+
+.btn-secondary-sp {
+  background-color: var(--secondary-color) !important;
+  border-color: var(--secondary-color) !important;
+}
+
+.btn-secondary-sp:hover {
+  background-color: var(--secondary-dark) !important;
+  border-color: var(--secondary-dark) !important;
+}
+
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card {
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Responsive classes */
+@media (max-width: 768px) {
+  .hide-sm {
+    display: none;
+  }
+}
