@@ -308,7 +308,7 @@ npm start</code></pre>
   <div class="footer">
     <h3>📞 Contact</h3>
     <p>IRONalways17 - <a href="https://github.com/IRONalways17">GitHub Profile</a></p>
-    <p>Project Link: <a href="https://github.com/IRONalways17/shareplate">https://github.com/IRONalways17/shareplate</a></p>
+    <p>Project Link: <a href="https://github.com/Aaryanis/shareplate">https://github.com/Aaryanis/shareplate</a></p>
     <hr>
     <p><strong>SharePlate: Because every plate of food deserves to be shared, not wasted.</strong></p>
   </div>
