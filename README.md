@@ -35,7 +35,6 @@
 
   <section id="features">
     <h2>✨ Features</h2>
-    
     <h3>For Food Donors</h3>
     <ul>
       <li>Easy food listing with photo uploads</li>
@@ -44,7 +43,6 @@
       <li>Ratings and review system</li>
       <li>Impact statistics and credit system</li>
     </ul>
-
     <h3>For NGOs</h3>
     <ul>
       <li>Real-time food donation notifications</li>
@@ -53,7 +51,6 @@
       <li>Donor ratings and reviews</li>
       <li>Distribution tracking</li>
     </ul>
-
     <h3>General Features</h3>
     <ul>
       <li>User authentication and profile management</li>
@@ -101,7 +98,6 @@
           <li><strong>Mapbox GL</strong> - For interactive maps</li>
         </ul>
       </div>
-
       <div class="tech-section">
         <h3>Backend</h3>
         <ul>
@@ -115,7 +111,6 @@
           <li><strong>Nodemailer</strong> - Email notifications</li>
         </ul>
       </div>
-
       <div class="tech-section">
         <h3>DevOps</h3>
         <ul>
@@ -126,27 +121,21 @@
       </div>
     </div>
   </section>
-
   <section id="getting-started">
     <h2>🚀 Getting Started</h2>
-    
     <h3>Prerequisites</h3>
     <ul>
       <li>Node.js (v16 or above)</li>
       <li>npm or yarn</li>
       <li>MongoDB (local or Atlas connection)</li>
     </ul>
-
     <h3>Installation</h3>
-    
     <h4>Clone the repository</h4>
     <pre><code>git clone https://github.com/IRONalways17/shareplate.git
 cd shareplate</code></pre>
-    
     <h4>Backend Setup</h4>
     <pre><code># Install backend dependencies
-npm install
-
+      npm install
 # Set up environment variables - create a .env file with these variables
 PORT=5000
 MONGO_URI=mongodb://localhost:27017/shareplate
@@ -169,14 +158,12 @@ REACT_APP_MAPBOX_TOKEN=your_mapbox_token
 
 # Start the frontend development server
 npm start</code></pre>
-    
     <p>The application will be available at:</p>
     <ul>
       <li>Frontend: <a href="http://localhost:3000">http://localhost:3000</a></li>
       <li>Backend API: <a href="http://localhost:5000">http://localhost:5000</a></li>
     </ul>
   </section>
-
   <section id="project-structure">
     <h2>📁 Project Structure</h2>
     <pre><code>shareplate/
@@ -208,10 +195,8 @@ npm start</code></pre>
 ├── server.js                # Express server entry point
 └── package.json             # Backend dependencies</code></pre>
   </section>
-
   <section id="workflow">
     <h2>🔄 Workflow</h2>
-    
     <h3>User Registration & Authentication</h3>
     <ol>
       <li>Users register as either food donors or NGOs</li>
@@ -219,7 +204,6 @@ npm start</code></pre>
       <li>Login using email/password or social authentication</li>
       <li>JWT-based authentication for secured API access</li>
     </ol>
-
     <h3>Food Donation Process</h3>
     <ol>
       <li>Donor creates a food listing with details and photos</li>
@@ -230,14 +214,12 @@ npm start</code></pre>
       <li>NGO picks up the food and marks it as collected</li>
       <li>Both parties can rate and review each other</li>
     </ol>
-
     <h3>Notification System</h3>
     <ul>
       <li>Real-time notifications via Socket.io</li>
       <li>Email notifications for important events</li>
       <li>In-app notification center</li>
     </ul>
-
     <h3>Admin Dashboard</h3>
     <ul>
       <li>User management</li>
@@ -246,10 +228,8 @@ npm start</code></pre>
       <li>System configuration</li>
     </ul>
   </section>
-
   <section id="api-documentation">
     <h2>📝 API Documentation</h2>
-    
     <h3>Authentication Endpoints</h3>
     <ul>
       <li><code>POST /api/auth/register</code> - Register new user</li>
@@ -257,7 +237,6 @@ npm start</code></pre>
       <li><code>GET /api/auth/profile</code> - Get user profile</li>
       <li><code>PUT /api/auth/profile</code> - Update user profile</li>
     </ul>
-
     <h3>Food Endpoints</h3>
     <ul>
       <li><code>GET /api/food</code> - List all food donations</li>
@@ -266,7 +245,6 @@ npm start</code></pre>
       <li><code>PUT /api/food/:id</code> - Update food donation</li>
       <li><code>DELETE /api/food/:id</code> - Delete food donation</li>
     </ul>
-
     <h3>NGO Endpoints</h3>
     <ul>
       <li><code>GET /api/ngo</code> - List all NGOs</li>
@@ -274,19 +252,15 @@ npm start</code></pre>
       <li><code>POST /api/ngo/request/:foodId</code> - Request food donation</li>
       <li><code>PUT /api/ngo/confirm/:requestId</code> - Confirm food pickup</li>
     </ul>
-
     <h3>Rating Endpoints</h3>
     <ul>
       <li><code>POST /api/rating</code> - Create rating</li>
       <li><code>GET /api/rating/user/:userId</code> - Get user ratings</li>
     </ul>
   </section>
-
   <section id="deployment">
     <h2>🌐 Deployment</h2>
-    
     <h3>Deploying to Render</h3>
-    
     <h4>Backend Deployment</h4>
     <ol>
       <li>Create a new Web Service on Render</li>
@@ -300,7 +274,6 @@ npm start</code></pre>
       <li>Add environment variables in the Render dashboard</li>
       <li>Deploy the service</li>
     </ol>
-
     <h4>Frontend Deployment</h4>
     <ol>
       <li>Create a new Static Site on Render</li>
@@ -311,7 +284,6 @@ npm start</code></pre>
       <li>Deploy the static site</li>
     </ol>
   </section>
-
   <section id="contributing">
     <h2>🤝 Contributing</h2>
     <ol>
@@ -321,7 +293,6 @@ npm start</code></pre>
       <li>Push to the branch: <code>git push origin feature/amazing-feature</code></li>
       <li>Open a pull request</li>
     </ol>
-
     <h3>Coding Standards</h3>
     <ul>
       <li>Follow ESLint and Prettier configurations</li>
@@ -330,12 +301,10 @@ npm start</code></pre>
       <li>Document new features</li>
     </ul>
   </section>
-
   <section id="license">
     <h2>📄 License</h2>
     <p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
   </section>
-
   <div class="footer">
     <h3>📞 Contact</h3>
     <p>IRONalways17 - <a href="https://github.com/IRONalways17">GitHub Profile</a></p>
