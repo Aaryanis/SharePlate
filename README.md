@@ -1,4 +1,135 @@
+# Zero Hunger Connect Architecture Diagram
 
+## 1. Client Applications
+```
+┌───────────────────────────────────────────────────┐
+│               Client Applications                 │
+│                                                   │
+│  ┌───────────────┐   ┌───────────────────────┐    │
+│  │  Web Browser  │   │   Mobile PWA App      │    │
+│  └───────────────┘   └───────────────────────┘    │
+└───────────────────────────────────────────────────┘
+```
+
+## 2. API Gateway
+```
+┌───────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                                        API Gateway                                                 │
+│                                                                                                   │
+│  ┌─────────────────┐   ┌──────────────────┐   ┌────────────────────┐   ┌──────────────────────┐   │
+│  │ RESTful APIs    │   │ Auth Middleware  │   │ Request Validation │   │  Rate Limiting       │   │
+│  └─────────────────┘   └──────────────────┘   └────────────────────┘   └──────────────────────┘   │
+└───────────────────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+## 3. Frontend Layer
+```
+┌───────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                                      Frontend Layer                                                │
+│                                                                                                   │
+│  ┌─────────────────┐   ┌──────────────────┐   ┌────────────────────┐   ┌──────────────────────┐   │
+│  │   React.js UI   │   │ PWA Components   │   │ Responsive Design  │   │  Maps Integration    │   │
+│  └─────────────────┘   └──────────────────┘   └────────────────────┘   └──────────────────────┘   │
+└───────────────────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+## 4. Backend Services
+```
+┌───────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                                    Backend Services                                                │
+│                                                                                                   │
+│  ┌────────────────┐  ┌────────────────┐  ┌─────────────────┐  ┌────────────────────────────┐     │
+│  │ User Management│  │ Help Management│  │ Notification    │  │ Matching Algorithm Engine  │     │
+│  │ Service        │  │ Service        │  │ Service         │  │                            │     │
+│  └────────────────┘  └────────────────┘  └─────────────────┘  └────────────────────────────┘     │
+│                                                                                                   │
+│  ┌────────────────┐  ┌────────────────┐  ┌─────────────────┐                                     │
+│  │ Review & Rating│  │ Credit System  │  │ Analytics       │                                     │
+│  │ Service        │  │ Service        │  │ Engine          │                                     │
+│  └────────────────┘  └────────────────┘  └─────────────────┘                                     │
+└───────────────────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+## 5. Database Layer
+```
+┌───────────────────────────────────────────────────────────────────────────────────────────────────┐
+│      Database Layer            │
+│                                │
+│  ┌────────────────────┐        │
+│  │ PostgreSQL         │        │
+│  │ (Relational Data:  │        │
+│  │  Users, Help       │        │
+│  │  Reviews)          │        │
+│  └────────────────────┘        │
+│                                │
+│  ┌────────────────────┐        │
+│  │ MongoDB            │        │
+│  │ (Unstructured Data:│        │
+│  │  Photos, Feedback) │        │
+│  └────────────────────┘        │
+│                                │
+│  ┌────────────────────┐        │
+│  │ Redis              │        │
+│  │ (Caching,          │        │
+│  │  Real-time Data)   │        │
+│  └────────────────────┘        │
+└───────────────────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+## 6. External Integrations
+```
+┌────────────────────────────────────────────┐
+│    External Integrations                   │
+│                                            │
+│  ┌────────────────┐                        │
+│  │ Google Maps    │                        │
+│  │ API            │                        │
+│  └────────────────┘                        │
+│                                            │
+│  ┌────────────────┐                        │
+│  │ SMS Gateway    │                        │
+│  │                │                        │
+│  └────────────────┘                        │
+│                                            │
+│  ┌────────────────┐                        │
+│  │ Payment Gateway│                        │
+│  │                │                        │
+│  └────────────────┘                        │
+│                                            │
+│  ┌────────────────┐                        │
+│  │ Social Media   │                        │
+│  │ APIs           │                        │
+│  └────────────────┘                        │
+└────────────────────────────────────────────┘
+```
+
+## 7. Hosting & Infrastructure
+```
+┌────────────────────────────────────────────┐
+│   Hosting & Infrastructure                 │
+│                                            │
+│  ┌────────────────┐                        │
+│  │ AWS/Azure      │                        │
+│  │ Cloud Hosting  │                        │
+│  └────────────────┘                        │
+│                                            │
+│  ┌────────────────┐                        │
+│  │ Kubernetes     │                        │
+│  │ Container      │                        │
+│  │ Orchestration  │                        │
+│  └────────────────┘                        │
+│                                            │
+│  ┌────────────────┐                        │
+│  │ CI/CD Pipeline │                        │
+│  │                │                        │
+│  └────────────────┘                        │
+│                                            │
+│  ┌────────────────┐                        │
+│  │ Auto-scaling   │                        │
+│  │ Infrastructure │                        │
+│  └────────────────┘                        │
+└────────────────────────────────────────────┘
+```
 </head>
 <body>
   <div class="header">
@@ -136,27 +267,25 @@ cd shareplate</code></pre>
     <h4>Backend Setup</h4>
     <pre><code># Install backend dependencies
       npm install
-# Set up environment variables - create a .env file with these variables
+Set up environment variables - create a .env file with these variables
 PORT=5000
 MONGO_URI=mongodb://localhost:27017/shareplate
 JWT_SECRET=your_jwt_secret
 NODE_ENV=development
 
-# Start the backend server
+Start the backend server
 npm run dev</code></pre>
-    
     <h4>Frontend Setup</h4>
     <pre><code># Navigate to client directory
 cd client
-
-# Install frontend dependencies
+Install frontend dependencies
 npm install
 
-# Set up environment variables - create a .env file with these variables
+Set up environment variables - create a .env file with these variables
 REACT_APP_API_URL=http://localhost:5000
 REACT_APP_MAPBOX_TOKEN=your_mapbox_token
 
-# Start the frontend development server
+Start the frontend development server
 npm start</code></pre>
     <p>The application will be available at:</p>
     <ul>
