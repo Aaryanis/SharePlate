@@ -1,4 +1,4 @@
-# Zero Hunger Connect Architecture Diagram
+# SharePlate Connect Architecture Diagram
 
 ## 1. Client Applications
 ```
